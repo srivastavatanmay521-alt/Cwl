@@ -1,14 +1,4 @@
-# Copyright (c) 2024 Cwelium Inc.
-# This project is licensed under the Cwelium License, which includes additional
-# terms under the GNU Affero General Public License (AGPL) v3.0.
-#
-# Author: Tips-Discord
-# Original Repository: https://github.com/Tips-Discord/Cwelium
-#
-# Additional Terms can be found at:
-# https://github.com/Tips-Discord/Cwelium/blob/main/LICENSE
 
-#from concurrent.futures import ThreadPoolExecutor
 from colorama import Fore
 from colorist import ColorHex as h
 from datetime import datetime
@@ -26,7 +16,6 @@ import time
 import uuid
 import websocket
 
-# Using requests.Session for cross-platform compatibility (Termux/Android)
 session = requests.Session()
 
 def get_random_str(length):
@@ -176,7 +165,7 @@ class Render:
 {'██║   ██║██║   ██║██║██║  ██║'.center(self.size)}
 {'╚██╗ ██╔╝██║   ██║██║██║  ██║'.center(self.size)}
 {'╚████╔╝ ╚██████╔╝██║██████╔╝'.center(self.size)}
-{'╚═══╝   ╚═════╝ ╚═╝╚═════╝'.center(self.size)}
+{'╚════╝   ╚═════╝ ╚═╝╚═════╝'.center(self.size)}
 """
         for edge in edges:
             ascii = ascii.replace(edge, f"{self.background}{edge}{C['white']}")
