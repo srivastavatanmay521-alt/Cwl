@@ -1,0 +1,5 @@
+colorama
+colorist
+requests
+websocket-client
+typing_extensions
