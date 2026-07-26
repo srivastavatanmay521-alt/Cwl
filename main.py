@@ -171,12 +171,12 @@ class Render:
         title(f"Cwelium | Connected as {_user} | made by Tips-Discord")
         edges = ["╗", "║", "╚", "╝", "═", "╔"]
         ascii = f"""
-{' ██████╗██╗    ██╗███████╗██╗     ██╗██╗   ██╗███╗   ███╗'.center(self.size)}
-{'██╔════╝██║    ██║██╔════╝██║     ██║██║   ██║████╗ ████║'.center(self.size)}
-{'██║     ██║ █╗ ██║█████╗  ██║     ██║██║   ██║██╔████╔██║'.center(self.size)}
-{'██║     ██║███╗██║██╔══╝  ██║     ██║██║   ██║██║╚██╔╝██║'.center(self.size)}
-{'╚██████╗╚███╔███╔╝███████╗███████╗██║╚██████╔╝██║ ╚═╝ ██║'.center(self.size)}
-{' ╚═════╝ ╚══╝╚══╝ ╚══════╝╚══════╝╚═╝ ╚═════╝ ╚═╝     ╚═╝'.center(self.size)}
+{'██╗   ██╗ ██████╗ ██╗██████╗'.center(self.size)}
+{'██║   ██║██╔═══██╗██║██╔══██╗'.center(self.size)}
+{'██║   ██║██║   ██║██║██║  ██║'.center(self.size)}
+{'╚██╗ ██╔╝██║   ██║██║██║  ██║'.center(self.size)}
+{'╚████╔╝ ╚██████╔╝██║██████╔╝'.center(self.size)}
+{'╚═══╝   ╚═════╝ ╚═╝╚═════╝'.center(self.size)}
 """
         for edge in edges:
             ascii = ascii.replace(edge, f"{self.background}{edge}{C['white']}")
@@ -197,7 +197,7 @@ class Render:
 {'│ «03» Spammer           «09» Accept Rules       «15» Change Nick       «21» Voice Joiner     │'.center(self.size)}
 {'│ «04» Token Checker     «10» Guild Check        «16» Thread Spammer    «22» Onboard Bypass   │'.center(self.size)}
 {'│ «05» Emoji Reaction    «11» Friend Spam        «17» Typer             «23» Dm Spammer       │'.center(self.size)}
-{'│ «06» ???               «12» ???                «18» ???               «24» ???              │'.center(self.size)}
+{'│ «06» discord.gg/codez       «12» discord.gg/urbancheats   «24»CODEZ & URBANCHEATS OWNZZ     │'.center(self.size)}
 {'╰─────────────────────────────────────────────────────────────────────────────────────────────╯'.center(self.size)}
 """
         for edge in edges:
@@ -340,7 +340,7 @@ class DiscordSocket(websocket.WebSocketApp):
                     "client_event_source": None
                 },
                 "presence": {
-                    "status": "online",
+                    "status": "dnd",
                     "since": 0,
                     "activities": [],
                     "afk": False
